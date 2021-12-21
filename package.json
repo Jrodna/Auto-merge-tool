@@ -10,14 +10,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:auto-merge-tool.mergetool"
+    "onCommand:auto-merge-tool.mergetool",
+    "onCommand:auto-merge-tool.difftool"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "auto-merge-tool.mergetool",
-        "title": "Git Merge-tool"
+        "title": "Git: merge-tool"
+      },
+      {
+        "command": "auto-merge-tool.difftool",
+        "title": "Git: diff-tool"
       }
     ]
   },
